@@ -1,0 +1,134 @@
+/* apply those styles to all elements. */
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    all: unset;
+    color: black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 700;
+    font-size: 120px;
+    text-shadow: 1px 2px 1px white;
+    text-align: center;
+}
+
+.js-clock {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.form, .greeting {
+    display: none;
+}
+
+.greetings-container {
+    display: flex;
+    justify-content: center;
+
+    padding-bottom: 20px;
+}
+
+.greetings-container input {
+    border: none;
+    border-radius: 6px;
+    padding: 10px;
+    width: 470px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: white;
+}
+
+.greetings-container .greeting {
+    all: unset;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    text-shadow: 1px 2px 1px white;
+}  
+
+.todolist-container {
+    width: 470px;
+    margin: 0 auto;
+    padding-top: 10px;
+}
+  
+  .todolist-container input {
+    border: none;
+    border-radius: 6px;
+    padding: 10px;
+    width: 470px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 16px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  
+  .todolist-container ul {
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-shadow: 2px 2px 2px black;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.3);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 0;
+    border-radius: 6px;
+  }
+  
+  .todolist-container button {
+    border: 1px solid gray;
+    border-radius: 30%;
+    padding: 0;
+    margin-right: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+
+.showing {
+    display: block;
+}
+
+.bgImage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    object-fit: cover;
+    animation: fadeIn 0.5s linear;
+}
+
+.weather-container {
+    position: absolute;
+    
+    font-style: italic;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 15px;
+    color: white;
+
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    /* display: flex;
+    justify-content: center;
+    
+    
+    padding-top: 20px; */
+}
+
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
